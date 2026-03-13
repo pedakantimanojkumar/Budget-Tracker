@@ -15,7 +15,9 @@ Building a simple web app that allows users to record and view their transaction
 
 ## Tech stack:
 Frontend: HTML, CSS, Javascript
+
 Backend: Node.js
+
 Database: MongoDB
 
 ## Setup steps:
