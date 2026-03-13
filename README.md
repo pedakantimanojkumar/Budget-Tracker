@@ -22,3 +22,6 @@ Database: MongoDB
 
 ## Setup steps:
 Instructions to run the project will be added later.
+
+## Wireframes
+Wireframes for the MVP screens are included in this project
