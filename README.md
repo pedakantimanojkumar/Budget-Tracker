@@ -80,6 +80,7 @@ cd Budget-Tracker
 
 ### 2. Setup Backend
 cd server
+
 npm install
 
 Create a `.env` file:
@@ -95,7 +96,9 @@ npm run dev
 
 ### 3. Setup Frontend
 cd client
+
 npm install
+
 npm run dev
 
 
