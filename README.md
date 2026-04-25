@@ -121,6 +121,17 @@ JWT_SECRET=your_jwt_secret
 - Deployment (Vercel + Render)
 
 ---
+## 📸 Screenshots
+
+### Dashboard
+![Dashboard](./screenshots/dashboard.png)
+
+### Transactions
+![Transactions](./screenshots/transactions.png)
+
+### Categories
+![Categories](./screenshots/categories.png)
+
 
 ## 👨‍💻 Author
 
