@@ -24,10 +24,14 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const res = await axios.post("http://localhost:5000/auth/login", {
-        email,
-        password,
-      });
+      // ✅ FIXED: use production backend URL from env
+      const res = await axios.post(
+        `${import.meta.env.VITE_API_URL}/auth/login`,
+        {
+          email,
+          password,
+        }
+      );
 
       localStorage.setItem("token", res.data.token);
 
@@ -74,7 +78,7 @@ const Login = () => {
   );
 };
 
-// ✅ Styles
+// styles
 const container = {
   display: "flex",
   justifyContent: "center",
