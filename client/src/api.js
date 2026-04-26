@@ -1,10 +1,9 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://budget-tracker-api.onrender.com",
+  baseURL: import.meta.env.VITE_API_URL,
 });
 
-//  THIS IS THE IMPORTANT PART
 api.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
