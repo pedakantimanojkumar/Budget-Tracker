@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 
-import AuthProvider from "./context/AuthContext";
+import AuthProvider from "./context/AuthContext.jsx";
 import UIProvider from "./context/UIContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
