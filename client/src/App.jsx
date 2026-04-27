@@ -7,8 +7,20 @@ import CategoryPage from "./pages/CategoryPage";
 import TransactionPage from "./pages/TransactionPage";
 
 import { Toaster } from "react-hot-toast";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Layout from "./components/Layout";
+
+// ✅ Simple button style
+const buttonStyle = {
+  margin: "10px",
+  padding: "10px 20px",
+  fontSize: "16px",
+  cursor: "pointer",
+  borderRadius: "5px",
+  border: "none",
+  backgroundColor: "#4CAF50",
+  color: "#fff",
+};
 
 function App() {
   return (
@@ -16,10 +28,32 @@ function App() {
       <Toaster />
 
       <Routes>
-        <Route path="/" element={<h1>Home Page</h1>} />
+        {/* ✅ UPDATED HOME PAGE */}
+        <Route
+          path="/"
+          element={
+            <div style={{ textAlign: "center", marginTop: "100px" }}>
+              <h1>💰 Budget Tracker</h1>
+              <p>Track your income and expenses easily</p>
+
+              <div style={{ marginTop: "20px" }}>
+                <Link to="/login">
+                  <button style={buttonStyle}>Login</button>
+                </Link>
+
+                <Link to="/signup">
+                  <button style={buttonStyle}>Signup</button>
+                </Link>
+              </div>
+            </div>
+          }
+        />
+
+        {/* Auth Routes */}
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
 
+        {/* Protected Routes */}
         <Route
           path="/dashboard"
           element={
@@ -27,7 +61,6 @@ function App() {
               <Layout>
                 <Dashboard />
               </Layout>
-              
             </PrivateRoute>
           }
         />
@@ -48,12 +81,10 @@ function App() {
               <Layout>
                 <CategoryPage />
               </Layout>
-              
             </PrivateRoute>
           }
         />
 
-        {/* ✅ ADD THIS */}
         <Route
           path="/transactions"
           element={
@@ -61,7 +92,6 @@ function App() {
               <Layout>
                 <TransactionPage />
               </Layout>
-              
             </PrivateRoute>
           }
         />
