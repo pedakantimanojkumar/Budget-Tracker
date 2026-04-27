@@ -16,6 +16,28 @@ People often find it difficult to track their daily income and expenses, leading
 A web application that allows users to record, manage, and analyze their financial transactions in a simple and visual way.
 
 ---
+## 🌐 Live Demo
+
+🔗 Frontend: https://budget-tracker-tau-henna.vercel.app  
+🔗 Backend API: https://budget-tracker-nk3g.onrender.com  
+
+---
+
+## 🔐 Demo Credentials
+
+Use these credentials to explore the app:
+
+Email: demo@gmail.com  
+Password: demo123  
+
+(Or create a new account via signup)
+
+---
+
+## ⚠️ Note
+
+Backend is hosted on Render (free tier), so it may take **30–60 seconds** to respond on the first request due to cold starts.
+
 
 ## 🧱 MVP Features
 
@@ -57,6 +79,10 @@ A web application that allows users to record, manage, and analyze their financi
 - Helmet
 - Rate Limiting
 - CORS Protection
+
+**Deployment**
+- Vercel (Frontend)
+- Render (Backend)
 
 ---
 
@@ -118,7 +144,7 @@ JWT_SECRET=your_jwt_secret
 - Budget limits per category
 - Notifications
 - Export reports (PDF/CSV)
-- Deployment (Vercel + Render)
+- Deployment (Vercel + Render) ✅ Completed
 
 ---
 ## 📸 Screenshots
